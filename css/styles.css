@@ -1,0 +1,87 @@
+/* CSS Reset */
+* {
+  padding: 0;
+  margin: 0;
+}
+
+/* Nav */
+.nav {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 8%;
+}
+
+.nav-link {
+  float: left;
+  padding: 10px;
+  line-height: 10px;
+  text-align: center;
+}
+
+.nav-logo {
+  float: left;
+  margin-left: 5%;
+  margin-right: 60%;
+}
+
+/* Grid Column Sizing */
+.col-1 {
+  float: left;
+  width: 8.333%;
+}
+
+.col-2 {
+  float: left;
+  width: 16.666%;
+}
+
+.col-3 {
+  float: left;
+  width: 24.999%;
+}
+
+.col-4 {
+  float: left;
+  width: 33.332%;
+}
+
+.col-5 {
+  float: left;
+  width: 41.665%;
+}
+
+.col-6 {
+  float: left;
+  width: 49.998%;
+}
+
+.col-7 {
+  float: left;
+  width: 58.331%;
+}
+``
+.col-8 {
+  float: left;
+  width: 66.664%;
+}
+
+.col-9 {
+  float: left;
+  width: 74.997;
+}
+
+.col-10 {
+  float: left;
+  width: 83.330%;
+}
+
+.col-11 {
+  float: left;
+  width: 91.6666%;
+}
+
+.col-12 {
+  float: left;
+  width: 100%;
+}
