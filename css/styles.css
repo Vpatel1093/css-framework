@@ -5,24 +5,81 @@
 }
 
 /* Nav */
+nav {
+  max-height: 160px;
+  min-height: 40px;
+}
+
 .nav {
-  position: fixed;
+  position: absolute;
+  box-sizing: border-box;
   top: 0;
   width: 100%;
-  height: 8%;
+  list-style: none;
+  display: none;
 }
 
 .nav-link {
-  float: left;
-  padding: 10px;
-  line-height: 10px;
+  line-height: 40px;
   text-align: center;
+  float: left;
+  clear: both;
+  width: 100%;
+  font-weight: bold;
+}
+
+.nav-link a {
+  text-decoration: none;
+  padding: 10px 20px;
+  height: 40px;
+  width: 100%;
 }
 
 .nav-logo {
   float: left;
   margin-left: 5%;
   margin-right: 60%;
+}
+
+.mobile-dropdown {
+  position: absolute;
+  top: 0;
+  right: 10px;
+  background: #222;
+  height: 30px;
+  width: 30px;
+  padding: 5px;
+  z-index: 2;
+}
+
+#nav-toggle {
+  position: absolute;
+  right: 5px;
+  top: 5px;
+  cursor: pointer;
+  padding: 10px 30px 16px 0px;
+}
+
+#nav-toggle span,
+#nav-toggle span:before,
+#nav-toggle span:after {
+    cursor: pointer;
+    border-radius: 1px;
+    height: 5px;
+    width: 30px;
+    background: #aaa;
+    position: absolute;
+    display: block;
+    content: '';
+    transition: all 300ms ease-in-out;
+}
+
+#nav-toggle span:before {
+  top: -10px;
+}
+
+#nav-toggle span:after {
+  bottom: -10px;
 }
 
 /* Grid Column Sizing */
@@ -84,4 +141,38 @@
 .col-12 {
   float: left;
   width: 100%;
+}
+
+@media only screen and (min-width: 980px) {
+  .logo {
+    left: 80px !important;
+  }
+
+  .nav {
+    position: fixed !important;
+    top: 0 !important;
+    display: inline-block;
+    max-width: 250px;
+    right: 30px;
+  }
+
+  .nav-link {
+    max-width: 65px;
+    text-align: center;
+    clear: none;
+    float: left;
+    font-weight: normal;
+  }
+
+  .nav li:first-child {
+    max-width: 100px;
+  }
+
+  .nav li:last-child {
+    margin-right: 8%;
+  }
+
+  .mobile-dropdown {
+    display: none;
+  }
 }

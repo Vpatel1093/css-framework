@@ -2,18 +2,60 @@
 body {
   font-family: 'Roboto', Helvetica, Arial, sans-serif;
   font-size: 14px;
-  color: #22222;
+  color: #222222;
 }
 
 /* Nav */
-.nav {
+nav {
   background-color: #222;
+}
+
+.nav {
+  top: 40px;
 }
 
 .nav * {
   color: #aaa;
 }
 
-.nav-link:hover {
-  color:
+.nav-link {
+  background-color: #222;
+}
+
+.nav-link a:hover {
+  color: #ddd;
+  background-color: #f2f2f2;
+}
+
+.logo {
+  height: 40px;
+  position: absolute;
+  top: 0;
+  left: 10px;
+  line-height: 40px;
+  z-index: 2;
+}
+
+.logo * {
+  display: inline-block;
+}
+
+.logo p {
+  color: #aaa;
+  position: absolute;
+  top: 0;
+  width: 150px;
+}
+
+#logo {
+  height: 30px;
+  padding: 5px;
+  opacity: 1;
+  z-index: 3;
+}
+
+@media only screen and (min-width: 980px) {
+  .nav-link a:hover {
+    background-color: #222;
+  }
 }
