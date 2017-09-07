@@ -15,6 +15,16 @@
         $('.nav').toggle();
       });
     });
+
+    $(window).on('resize', function () {
+      if($(window).height() > 400) {
+        $('#container').addClass('col-11');
+        $('#container').removeClass('col-7');
+      } else {
+        $('#container').addClass('col-7');
+        $('#container').removeClass('col-11');
+      };
+    });
   </script>
 </head>
 
@@ -33,5 +43,13 @@
       <li class="nav-link"><a href="#">Login</a></li>
     </ul>
   </nav>
+  <div class="col-7 centered" id="container">
+    <div class="heading">
+      <h1>This is Your Path to Learning Web Development</h1>
+      <p>If you want to learn web development, you've come to the right place. We found the best free resources out there and grouped them into the courses listed below so you don't have to waste time doing it yourself. We've also created projects for you to build along the way so you can really learn the material and boost your portfolio.
+          The courses are designed to be completed in order, so start from the top and work your way down. The best part is, <strong>it's free!</strong>
+      </p>
+    </div>
+  </div>
 </body>
 </html>
