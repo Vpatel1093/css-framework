@@ -24,6 +24,72 @@ h1 {
 
 .course {
   margin-bottom: 20px;
+  margin-top: 30px;
+}
+
+.course h2 {
+  margin-left: -14px;
+}
+
+.course h2 a {
+  text-decoration: none;
+  font-size: 36px;
+  color: #08c;
+}
+
+.course h2 a:hover, .course h2 a:focus {
+  color: #07a;
+}
+
+.course h3 {
+  color: #f60;
+  font-size: 24px;
+  margin-top: 10px;
+}
+
+.course-content p {
+  font-size: 16px;
+  color: #666;
+}
+
+.learn, .build {
+  margin-top: 6px;
+}
+
+.learn {
+  margin-left: 14px;
+}
+
+.build {
+  margin-left: -18px;
+}
+
+.learn h4, .build h4 {
+  text-decoration: underline;
+  font-size: 20px;
+  font-weight: bold;
+  color: #333333;
+}
+
+.learn ul, .build ul {
+  margin-top: 10px;
+  font-size: 16px;
+  color: #666;
+  font-style: italic;
+}
+
+.see-more {
+  width: 100%;
+  text-align: center;
+  margin-top: 10px;
+}
+
+.see-more a, .see-more a {
+  text-decoration: none;
+  color: #0088cc;
+  font-size: 16px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 /* Nav */
