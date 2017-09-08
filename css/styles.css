@@ -6,6 +6,7 @@
 
 /* Nav */
 nav {
+  top: 0;
   max-height: 160px;
   min-height: 40px;
 }
@@ -178,8 +179,12 @@ nav {
     left: 80px !important;
   }
 
+  nav {
+    position: fixed;
+    width: 100%;
+  }
+
   .nav {
-    position: fixed !important;
     top: 0 !important;
     display: inline-block;
     max-width: 250px;
@@ -214,5 +219,9 @@ nav {
 
   #spacing {
     display: none;
+  }
+
+  body {
+    padding-top: 40px;
   }
 }
