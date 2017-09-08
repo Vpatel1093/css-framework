@@ -24,7 +24,8 @@ h1 {
 
 .course {
   margin-bottom: 20px;
-  margin-top: 30px;
+  padding-top: 30px;
+  clear: both;
 }
 
 .course h2 {
@@ -41,11 +42,11 @@ h1 {
   color: #07a;
 }
 
-.start-here h3 {
+.teaser h3 {
   color: #f60;
   font-size: 24px;
   margin-top: 20px;
-  width: 130px;
+  width: 100%;
 }
 
 .course-content p {
@@ -77,6 +78,10 @@ h1 {
   font-size: 16px;
   color: #666;
   font-style: italic;
+}
+
+.learn ul li, .build ul li {
+  width: 85%;
 }
 
 .see-more {
@@ -144,7 +149,7 @@ nav {
     background-color: #222;
   }
 
-  .start-here {
+  .teaser {
     float: left;
     width: 130px;
   }
